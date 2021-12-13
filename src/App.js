@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { Container } from '@mui/material';
+import LandingPage from './components/landing-page';
+import Game from './components/game';
+import HighScores from './components/high-scores';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container sx={{height: '100vh'}}>
+      <Routes>
+        <Route path="/" element={<LandingPage/>}/>
+        <Route path="/game" element={<Game/>}/>
+        <Route path="/scores" element={<HighScores/>}/>
+      </Routes>
+    </Container>
   );
 }
 
