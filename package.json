@@ -2,7 +2,7 @@
   "name": "this-is-the-quiz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Naternelson.github.io/this-is-the-quiz",
+  "homepage": "https://naternelson.github.io/this-is-the-quiz",
   "dependencies": {
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pre-deploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
